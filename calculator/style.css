@@ -1,0 +1,94 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    background: rgb(2, 17, 36);
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-display: swap;
+    justify-content: center;
+    height: inherit;
+
+}
+
+.wrapper{
+    background-color: rgba(221, 18, 18, 0.75);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 16px;
+    height: 90%;
+    flex-basis: 40%;
+    padding: 20px 35px;
+    overflow: auto;
+}
+
+.screen{
+    background-color: rgba(230, 219, 219, 0.75);
+    -webkit-backdrop-filter: blur(5.5px);
+    backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    color: black;
+    font-size: 35px;
+    padding: 20px;
+    text-align: right;
+    overflow: auto;
+}
+
+.cal-bnt-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.cal-bnt{
+    background-color: rgba(235, 225, 225, 0.75);
+    -webkit-backdrop-filter: blur(5.5px);
+    backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    flex-basis: 18%;
+    height: 8.7vh;
+    font-family: inherit;
+    font-size: larger;
+    color: black;
+    border-radius: 10px;
+
+}
+.cal-bnt:last-child{
+    background-color: rgba(108, 255, 3, 0.75);
+    -webkit-backdrop-filter: blur(5.5px);
+    backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+.cal-bnt:last-child:hover{
+    background-color: inherit;
+    color: inherit;
+}
+.cal-bnt:hover{
+    background-color: inherit;
+    color: inherit; 
+}
+.cal-bnt:active{
+    background-color: rgb(132, 132, 194);
+    color: inherit;
+
+}
+
+.double{
+    flex-basis: 50%;
+}
